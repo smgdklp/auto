@@ -1,0 +1,70 @@
+
+"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --remote-debugging-port=9222 --user-data-dir="C:\temp\edge_profile"
+
+
+from selenium import webdriver
+from selenium.webdriver.edge.options import Options
+from selenium.webdriver.edge.service import Service
+edge_options = Options()
+edge_options.add_experimental_option("debuggerAddress", "127.0.0.1:9222")
+service = Service(r"C:\Users\ZhuanZ\AppData\Local\Programs\Python\Python313\msedgedriver.exe")
+driver = webdriver.Edge(service=service, options=edge_options)
+驱动创立和连接
+创立失败print
+
+try 搜索标题为“学生学习页面”页选中为当前页面
+else print找不到页面 
+
+life=Ture
+idex=0
+while life:
+	print"第，idex，次，time.time>"
+	time.sleep(600)
+	check_play（）
+	check_task()
+	check_win()
+def check_play（）：
+if
+元素<button class="vjs-big-play-button" type="button" title="播放视频" aria-disabled="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">播放视频</span></button>
+该元素被隐藏则print “检测已经播放”
+else:
+	try :
+		模拟点击该botton,print"检测未播放，尝试点击“
+		检测是否隐藏
+		if 隐藏
+			print"播放成功”
+		else
+			print"播放失败“
+			关闭程序
+
+def check_task():
+if元素<span class="icon_Completed prevTips">
+    <span class="prevHoverTips">已完成<i></i></span>
+</span>为已完成
+print"检测已经完成”
+则模拟点击按钮<div id="prevNextFocusNext" class="jb_btn jb_btn_92 fs14 prev_next next fr" tabindex="-1" role="button" onclick="PCount.next('1','1149628153','262300877','143851261','',true)" onkeydown="if(event.keyCode == 13){PCount.next('1','1149628153','262300877','143851261','',true);}" style="display: block;">下一节</div>
+print”切入下一节“
+else:
+print"检测未完成“
+
+def check_win():
+if弹窗元素<div class="maskDiv jobFinishTip" style="display:none;">
+    <p class="popWord2 fs16 colorIn jobLimitTip">
+        当前章节还有任务点未完成，是否去完成？
+    </p>
+</div>出现
+print”怎么就退了“
+模拟点击<a href="javascript:" class="btnBlue btn_92_cancel fr fs14 popMoveDele" onkeydown="toLearnFocus();" onclick="scroll2Job()">去学习</a>按钮
+print"已点去学习
+
+如果<div class="maskDiv jobCountDiv" style="display:none;">
+    <p class="popWord2 fs16 colorIn jobLimitTip">
+        今日视频任务点完成数已达上限，您可以观看视频，但无法完成任务点
+    </p>
+</div>或<div class="maskDiv jobCountDiv" style="display:none;">
+    <p class="popWord2 fs16 colorIn videoLimitTip">
+        今日视频观看时长已达上限，您可继续观看视频，但无法完成任务点
+    </p>
+</div>弹窗显示
+print"老大出事了，跑路了”
+结束程序
